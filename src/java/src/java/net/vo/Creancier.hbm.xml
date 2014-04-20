@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22 mars 2014 10:04:26 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="net.vo.Creancier" table="creancier" catalog="gestionbudgetaire">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="denomination" type="string">
+            <column name="denomination" length="256" not-null="true" />
+        </property>
+        <property name="formeJuridique" type="string">
+            <column name="formeJuridique" length="256" not-null="true" />
+        </property>
+        <property name="nomContact" type="string">
+            <column name="nomContact" length="256" />
+        </property>
+        <property name="registreDeCommerce" type="string">
+            <column name="registreDeCommerce" length="256" />
+        </property>
+        <property name="identifiantFiscal" type="string">
+            <column name="identifiantFiscal" length="256" />
+        </property>
+        <property name="cnss" type="string">
+            <column name="cnss" length="256" />
+        </property>
+        <property name="tel" type="string">
+            <column name="tel" length="256" />
+        </property>
+        <property name="fax" type="string">
+            <column name="fax" length="256" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="256" />
+        </property>
+    </class>
+</hibernate-mapping>
